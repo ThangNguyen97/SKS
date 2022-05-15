@@ -1,0 +1,80 @@
+2022-05-07 15:41:02,279 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:35000
+ * Running on http://172.22.10.2:35000 (Press CTRL+C to quit)
+2022-05-07 15:41:05,731 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:35000
+ * Running on http://172.22.10.2:35000 (Press CTRL+C to quit)
+2022-05-07 15:41:20,442 ERROR app Thread-1 : Exception on /keyword_spotting [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/AIHN/KEYWORD_SPOTTING/service/kws.py", line 20, in post
+    predictions = apply.apply_to_file(model, wav_file, device)
+NameError: name 'apply' is not defined
+2022-05-07 15:41:20,450 INFO werkzeug Thread-1 : 172.20.50.79 - - [07/May/2022 15:41:20] "[35m[1mPOST /keyword_spotting HTTP/1.1[0m" 500 -
+2022-05-07 15:42:20,189 ERROR app Thread-2 : Exception on /keyword_spotting [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/AIHN/KEYWORD_SPOTTING/service/kws.py", line 20, in post
+    predictions = apply.apply_to_file(model, wav_file, device)
+NameError: name 'apply' is not defined
+2022-05-07 15:42:20,191 INFO werkzeug Thread-2 : 172.20.50.79 - - [07/May/2022 15:42:20] "[35m[1mPOST /keyword_spotting HTTP/1.1[0m" 500 -
+2022-05-07 15:43:58,224 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:35000
+ * Running on http://172.22.10.2:35000 (Press CTRL+C to quit)
+2022-05-07 15:43:59,464 ERROR app Thread-1 : Exception on /keyword_spotting [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/AIHN/KEYWORD_SPOTTING/service/kws.py", line 20, in post
+    predictions = apply.apply_to_file(model, wav_file, device)
+NameError: name 'apply' is not defined
+2022-05-07 15:43:59,467 INFO werkzeug Thread-1 : 172.20.50.79 - - [07/May/2022 15:43:59] "[35m[1mPOST /keyword_spotting HTTP/1.1[0m" 500 -
+2022-05-07 16:00:45,469 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:35000
+ * Running on http://172.22.10.2:35000 (Press CTRL+C to quit)
+2022-05-07 16:00:50,803 ERROR app Thread-1 : Exception on /keyword_spotting [POST]
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask/views.py", line 84, in view
+    return current_app.ensure_sync(self.dispatch_request)(*args, **kwargs)
+  File "/root/anaconda3/envs/keyword/lib/python3.8/site-packages/flask_restful/__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/AIHN/KEYWORD_SPOTTING/service/kws.py", line 17, in post
+    video_path = config_app['data_input'] + model_speech + "_" + str(input_speech.filename)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2022-05-07 16:00:50,806 INFO werkzeug Thread-1 : 172.20.50.79 - - [07/May/2022 16:00:50] "[35m[1mPOST /keyword_spotting HTTP/1.1[0m" 500 -

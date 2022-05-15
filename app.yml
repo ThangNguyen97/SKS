@@ -1,0 +1,12 @@
+server:
+  ip_address: '0.0.0.0'
+  port: '35000'
+log:
+  app: 'app.log'
+  request: 'request.log'
+data_input : "/AIHN/KEYWORD_SPOTTING/data_input/"
+model_weight:
+  bc_resnet: "/AIHN/KEYWORD_SPOTTING/model/model-sc-2.pt"
+  kwt : "/AIHN/KEYWORD_SPOTTING/process/KWT/KWS_transformer20_2"
+  device: "cpu"
+
